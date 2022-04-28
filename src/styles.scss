@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.h4-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700 !important;
+}
+
+.color-primary {
+    color: #118167;
+}
+
+.color-accent {
+    color: #FEA539;
+}
+
+.primary-text {
+    color: #333333 !important;
+}
+
+.secondary-text {
+    color: #666666 !important;
+}
+
+.color-text-light {
+    color: #FFFFFF;
+}
+
+.color-secondary {
+    color: #F2F2F2 !important;
+}
+
+.secondary-boton-active {
+    color: #118167;
+}
+
+.button-active {
+    color: #FEA539;
+}
+
+.bg-accent {
+    background-color: #FEA539;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-grey {
+    background-color: #F2F2F2;
+}
+
+.color-text-primary {
+    color: #666666
+}
+
+.color-text-secondary {
+    color: #FFFFFF;
+}
+
+.color-title {
+    color: #333333
+}
+
+.color-title-secondary {
+    color: #FFFFFF;
+}
+
+.btn-turno {
+    background-color: #FEA539;
+    padding: 19px 50px 19px 50px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 0;
+
+    &:hover {
+        background-color: #D18A33;
+    }
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px 10px 20px;
+}
+
+.btn-primary {
+    background-color: #FEA539;
+    color: #FFFFFF;
+
+    &:hover {
+        background-color: #D18A33;
+    }
+}
+
+.btn-secondary {
+    background-color: #118167;
+    color: #FFFFFF;
+
+    &:hover {
+        background-color: #09503f;
+    }
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
