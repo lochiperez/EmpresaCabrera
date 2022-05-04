@@ -1,1 +1,25 @@
-<p>farmacias works!</p>
+<div
+    style="background-image: url(../../../assets/img/quirofano.png); background-repeat: no-repeat; background-size: 100% 100%; height: 571px;">
+</div>
+
+<div class="container margin-y-xl flex justify-center">
+    <table>
+        <tr>
+            <th class="bg-green color-white text-center padding-md">
+                <h4 class="h4-bold">Farmacia</h4>
+            </th>
+            <th class="bg-green color-white text-center padding-md">
+                <h4 class="h4-bold">Dirección</h4>
+            </th>
+        </tr>
+        <tr *ngFor="let profesional of profesionales" class="border">
+            <td class=" padding-y-xs padding-right-xxxxl padding-left-md">
+                <h5 class="color-title">{{profesional.primernombre}}</h5>
+            </td>
+            <td class=" padding-y-xs padding-right-xxxxl padding-left-md border">
+                <h5 class="color-title">{{profesional.especialidad}}</h5>
+            </td>
+        </tr>
+    </table>
+
+</div>

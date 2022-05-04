@@ -13,7 +13,9 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbdCarouselConfig } from './components/carousel-config/carousel-config.component';
+import { ProfesionalesService } from './components/profesionales/profesionales.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
     FarmaciasComponent,
     HeaderComponent,
     FooterComponent,
-    SlideshowComponent
+    NgbdCarouselConfig
   ],
   imports: [
     BrowserModule,
@@ -36,8 +38,11 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgbModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [NgbdCarouselConfig],
+  providers: [ProfesionalesService],
+  bootstrap: [AppComponent,
+    NgbdCarouselConfig]
 })
 export class AppModule { }
